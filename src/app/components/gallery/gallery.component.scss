@@ -10,6 +10,12 @@
       flex: 1;
       padding-right: 10px;
 
+      ul {
+        li {
+          position: relative;
+        }
+      }
+
       img {
         margin-top: 10px;
         vertical-align: middle;
@@ -26,22 +32,34 @@
         }
       }
       .img-desc {
-        display: none;
-        position: fixed;
-        z-index: 2;
-        left: 50%;
-        bottom: 6%;
-        transform: translatex(-50%);
         color: #fff;
         text-align: center;
+        width: 100%;
+        padding-top: 10px;
 
         h2 {
-          font-size: 1.4em;
+          font-size: 1.1em;
           margin-bottom: 10px;
+        }
+        p {
+          display: none;
+          max-width: 80%;
+          margin: auto;
         }
 
         &.show {
-          display: block;
+          position: fixed;
+          z-index: 2;
+          left: 50%;
+          bottom: 6%;
+          transform: translatex(-50%);
+          background: none;
+          h2 {
+            font-size: 1.4em;
+          }
+          p {
+            display: block;
+          }
         }
       }
     }
