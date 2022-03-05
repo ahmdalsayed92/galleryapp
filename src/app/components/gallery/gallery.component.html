@@ -1,0 +1,94 @@
+<div class="container">
+  <div class="row">
+    <div class="column">
+      <ul *ngFor="let image of images; let i = index">
+        <li *ngIf="i < 8">
+          <img
+            [src]="image.url"
+            alt="game name "
+            (click)="openImage($event)"
+            role="button"
+            tabindex="0"
+          />
+          <div class="img-desc">
+            <h2>Image Title Goes Here</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
+              dolorum veritatis corporis reprehenderit perferendis est omnis
+              esse nostrum consequatur cumque nobis fuga praesentium, molestiae
+              vel quas doloremque incidunt excepturi perspiciatis.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="column">
+      <ul *ngFor="let image of images; let i = index">
+        <li *ngIf="7 < i && i < 16">
+          <img
+            [src]="image.url"
+            alt="game name "
+            (click)="openImage($event)"
+            role="button"
+            tabindex="0"
+          />
+          <div class="img-desc">
+            <h2>Image Title Goes Here</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
+              dolorum veritatis corporis reprehenderit perferendis est omnis
+              esse nostrum consequatur cumque nobis fuga praesentium, molestiae
+              vel quas doloremque incidunt excepturi perspiciatis.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="column">
+      <ul *ngFor="let image of images; let i = index">
+        <li *ngIf="15 < i && i < 24">
+          <img
+            [src]="image.url"
+            alt="game name "
+            (click)="openImage($event)"
+            role="button"
+            tabindex="0"
+          />
+          <div class="img-desc">
+            <h2>Image Title Goes Here</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
+              dolorum veritatis corporis reprehenderit perferendis est omnis
+              esse nostrum consequatur cumque nobis fuga praesentium, molestiae
+              vel quas doloremque incidunt excepturi perspiciatis.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="column">
+      <ul *ngFor="let image of images; let i = index">
+        <li *ngIf="23 < i && i < 32">
+          <img
+            [src]="image.url"
+            alt="game name "
+            (click)="openImage($event)"
+            role="button"
+            tabindex="0"
+          />
+          <div class="img-desc">
+            <h2>Image Title Goes Here</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
+              dolorum veritatis corporis reprehenderit perferendis est omnis
+              esse nostrum consequatur cumque nobis fuga praesentium, molestiae
+              vel quas doloremque incidunt excepturi perspiciatis.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div *ngIf="opened" class="overlay"></div>
+<button *ngIf="opened" class="close" (click)="closeImage()">X</button>

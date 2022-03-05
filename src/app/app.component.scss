@@ -1,0 +1,29 @@
+header {
+  background-color: #007474;
+
+  .header-container {
+    padding: 20px 0px;
+    max-width: 80%;
+    margin: auto;
+
+    h1 {
+      font-size: 2em;
+      text-align: center;
+      font-family: sans-serif;
+      margin-bottom: 15px;
+      color: #f1e802;
+      font-weight: 600;
+    }
+
+    p {
+      font-family: sans-serif;
+      margin-bottom: 15px;
+      color: #fff;
+      text-align: center;
+      word-spacing: 2px;
+      line-height: 1.2;
+      font-weight: 100;
+      letter-spacing: 1px;
+    }
+  }
+}
